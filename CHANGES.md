@@ -1,4 +1,6 @@
 Issues Identified
+
+
 SQL Injection Vulnerability: The original code used f-strings to build SQL queries in several functions (get_user, update_user, delete_user, search_users, and login). This practice is insecure as it allows user-provided input to be directly executed as part of the SQL command, potentially leading to unauthorized data access or modification.
 
 Plain Text Passwords: The application stored and checked user passwords as plain text. This is a critical security risk because if the database were ever compromised, all user passwords would be exposed.
